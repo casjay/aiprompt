@@ -31,7 +31,7 @@
     - [ ] Ollama (Direct HTTP API via `reqwest`).
     - [ ] Opencode (`opencode` binary).
     - [ ] OpenClaw (`openclaw` binary).
-- [ ] **Auth Command:** Implement `aiprompt auth login [provider]` for all 7 tools.
+- [ ] **Auth Command:** Implement `aiprompt [provider] auth login` for all 7 tools.
 
 ## Phase 3: Multimodal Interface
 - [x] **Environment Detection:** Logic for SSH, TTY, Wayland/X11 detection.
