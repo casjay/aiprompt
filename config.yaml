@@ -1,0 +1,18 @@
+provider: claude
+context:
+  always:
+    - Follow SPEC (use grep/search ensure full context)
+    - Ask the user if unsure
+  never:
+    - add AI attribution
+    - assume or guess
+permissions:
+  files:
+    - allow: /tmp/test.txt
+    - deny: /etc/passwd
+  commands:
+    - allow: shell(ls)
+    - deny: shell(rm *)
+  web:
+    - allow: https://google.com
+    - deny: all

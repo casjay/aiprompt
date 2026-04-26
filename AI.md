@@ -121,3 +121,15 @@ The engine normalizes user inputs and translates them into provider-specific fla
 *   **Filesystem Manager:** Cross-platform path resolution and permission enforcement.
 *   **Provider Engine:** Subprocess execution with environment variable injection.
 *   **Sandbox Engine:** Active interceptor for forbidden paths and commands.
+
+## 8. CLI Options
+
+*   **`--color <auto|always|never>`**: Controls colored output in the terminal.
+    *   `auto` (default): Enables colors if the output is a TTY (interactive terminal).
+    *   `always`: Forces colored output, even if not a TTY.
+    *   `never`: Disables all colored output.
+    *   **Precedence:** This option can be overridden by the `NO_COLOR` environment variable.
+
+*   **`--debug`**: Enables debug logging and output. When this flag is present, `aiprompt` will print detailed internal operations and debugging information to `stderr`.
+
+*   **`NO_COLOR` Environment Variable**: When the `NO_COLOR` environment variable is set (to any value), it disables all colored output, regardless of the `--color` CLI argument. This adheres to the [no-color.org](https://no-color.org/) standard.
